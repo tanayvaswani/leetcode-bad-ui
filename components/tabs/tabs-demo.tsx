@@ -5,14 +5,18 @@ export function TabsDemo() {
   return (
     <Tabs defaultValue="account" className="w-full h-full">
       <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="account">Account</TabsTrigger>
-        <TabsTrigger value="password">Password</TabsTrigger>
+        <TabsTrigger value="account">Choice 1</TabsTrigger>
+        <TabsTrigger value="password">Choice 2</TabsTrigger>
       </TabsList>
       <TabsContent value="account">
-        <div>AAA</div>
+        <div className="h-full w-full flex items-center justify-center text-white">
+          Show Content one
+        </div>
       </TabsContent>
       <TabsContent value="password">
-        <div>PPP</div>
+        <div className="h-full w-full flex items-center justify-center text-white">
+          Show Content Two
+        </div>
       </TabsContent>
     </Tabs>
   );
